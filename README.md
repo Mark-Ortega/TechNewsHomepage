@@ -1,8 +1,8 @@
 # Mark Ortega
 # 2/7/24
 # In this project I did a html/css challgenge using bootstrap to recreate a tech news homepage.
-# Peer Reviewer:
-# Peer Review:
+# Peer Reviewer: Alexander Soria
+# Peer Review: The site looks very good in the majority of formats. The only problem lies within the tablet version, where the 3 topics on the bottom could have been better if they were all aligned on one side or weren't all constrained to a grid and flexed across the page in a list. Still, the site works and is very responsive, a good job overall.
 
 
 
