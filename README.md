@@ -1,3 +1,11 @@
+# Mark Ortega
+# 2/7/24
+# In this project I did a html/css challgenge using bootstrap to recreate a tech news homepage.
+# Peer Reviewer:
+# Peer Review:
+
+
+
 # Frontend Mentor - News homepage
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
