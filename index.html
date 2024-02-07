@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    p{
+      color: grey;
+    }
+  </style>
+</head>
+
+<body style="background-color:#222222; color: white; ">
+  <!-- Desktop Start -->
+  <div class="container d-none d-lg-block" style="width:80%; background-color: white;">
+    <div class="row">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 3em;" >
+        <div class="container-fluid" style="padding-right: 5.7%;">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/assets/images/logo.svg" alt="Bootstrap" width="60" height="35">
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">New</a>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Categories</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="row">
+      <div class="col-7" style="margin-left: 5%; padding: 0px;">
+        <div class="card" style="border: none;">
+          <img src="/assets/images/image-web-3-desktop.jpg" class="card-img-top" alt="Hero Image" style="border-radius: 0px;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <p class="card-title" style="font-weight: 800; padding: 5%; font-size: 50px; line-height: 1;">The Bright Future of Web 3.0?</p>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <p class="card-text" style="font-size: 16px;">We dive into the next evolution of the web that claims to put the power of the
+                    platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                </div>
+                <div class="row">
+                  <button type="button" class="btn mt-4"
+                    style="background-color: hsl(5, 85%, 63%); color: white; border-radius: 0; width: 11em; height: 3em; margin-left: 3%;">Read
+                    More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 ms-4" style="padding: 0px;">
+        <div class="container"
+          style=" background-color: hsl(240, 100%, 5%); border: 2px solid hsl(240, 100%, 5%); padding:
+          1em;">
+          <h1 class="mt-2" style="color: hsl(35, 77%, 62%); font-weight: 700;">New</h1>
+          <h5 class="mt-4 mb-2">Hydrogen VS Electric Cars</h5>
+          <p style="font-size: 15px;" class="mb-4">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <hr>
+          <h5 class="mt-4 mb-2">The Downsides of AI Artistry</h5>
+          <p style="font-size: 15px;" class="mb-4">What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr>
+          <h5 class="mt-4 mb-2">Is VC Funding Drying Up?</h5>
+          <p style="font-size: 15px;" class="mb-4">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="display: flex; justify-content: center;">
+    <div class="row mt-2">
+      <div class="col">
+        <div class="card mb-3" style="max-width: 21em; border: none;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/assets/images/image-retro-pcs.jpg" class="img-fluid" alt="Image of retro computer" >
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding: 0; padding-left: 1em;">
+                <h3 style="color: lightgrey;">01</h3>
+                <h6 class="card-title" style="font-weight: 800;">Reviving old retro PCs</h6>
+                <p class="card-text" style="font-size: 15px;">What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-3" style="max-width: 21em; border: none;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/assets/images/image-top-laptops.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding: 0; padding-left: 1em;">
+                <h3 style="color: lightgrey;">02</h3>
+                <h6 class="card-title" style="font-weight: 800;">Top Ten Laptop's of 2022</h6>
+                <p class="card-text" style="font-size: 15px;">Our best picks for various needs and budgets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="max-width: 21em; border: none;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/assets/images/image-gaming-growth.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding: 0; padding-left: 1em;">
+                <h3 style="color: lightgrey;">03</h3>
+                <h6 class="card-title" style="font-weight: 800;">The Grow of Gaming</h6>
+                <p class="card-text" style="font-size: 15px;">How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Desktop End -->
+
+<!-- Tablet Start -->
+<div class="container d-none d-md-block d-lg-none" style="width:80%; background-color: white;">
+  <div class="row">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 3em;" >
+      <div class="container-fluid" style="padding-right: 5.7%;">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="/assets/images/logo.svg" alt="Bootstrap" width="60" height="35">
+            </a>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">New</a>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Categories</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero -->
+  <div class="row">
+    <div class="col-7" style="margin-left: 5%; padding: 0px;">
+      <div class="card" style="border-radius: 0;">
+        <img src="/assets/images/image-web-3-desktop.jpg" class="card-img-top" alt="Hero Image" style="border-radius: 0px;">
+        <div class="card-body">
+          <div class="row">
+              <p class="card-title" style="font-weight: 800; padding: 5%; font-size: 40px; line-height: 1;">The Bright Future of Web 3.0?</p>
+              <div class="row">
+                <p class="card-text" style="font-size: 16px;">We dive into the next evolution of the web that claims to put the power of the
+                  platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              </div>
+              <div class="row" style="display: flex; justify-content: center;">
+                <button type="button" class="btn mt-4"
+                  style="background-color: hsl(5, 85%, 63%); color: white; border-radius: 0; width: 11em; height: 3em;">Read
+                  More</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col" style="padding: 0;">
+          <div class="card mb-3" style="max-width: 21em; border: none;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/images/image-retro-pcs.jpg" class="img-fluid" alt="Image of retro computer" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" style="padding: 0; padding-left: 1em;">
+                  <h3 style="color: lightgrey;">01</h3>
+                  <h6 class="card-title" style="font-weight: 800;">Reviving old retro PCs</h6>
+                  <p class="card-text" style="font-size: 15px;">What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3 ms-4" style="padding: 0px;">
+      <div class="container"
+        style=" background-color: hsl(240, 100%, 5%); border: 2px solid hsl(240, 100%, 5%); padding:
+        1em;">
+        <h1 class="mt-2" style="color: hsl(35, 77%, 62%);">New</h1>
+        <h5 class="mt-4 mb-2">Hydrogen VS Electric Cars</h5>
+        <p style="font-size: 15px;" class="mb-4">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr>
+        <h5 class="mt-4 mb-2">The Downsides of AI Artistry</h5>
+        <p style="font-size: 15px;" class="mb-4">What are the possible adverse effects of on-demand AI image generation?</p>
+        <hr>
+        <h5 class="mt-4 mb-2">Is VC Funding Drying Up?</h5>
+        <p style="font-size: 15px;" class="mb-4">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="display: flex; justify-content: center;">
+  <div class="row mt-2">
+    <div class="col">
+      <div class="card mb-3" style="max-width: 21em; border: none;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/assets/images/image-top-laptops.jpg" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="padding: 0; padding-left: 1em;">
+              <h3 style="color: lightgrey;">02</h3>
+              <h6 class="card-title" style="font-weight: 800;">Top Ten Laptop's of 2022</h6>
+              <p class="card-text" style="font-size: 15px;">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="max-width: 21em; border: none;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/assets/images/image-gaming-growth.jpg" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="padding: 0; padding-left: 1em;">
+              <h3 style="color: lightgrey;">03</h3>
+              <h6 class="card-title" style="font-weight: 800;">The Grow of Gaming</h6>
+              <p class="card-text" style="font-size: 15px;">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Tablet End -->
+
+
+
+<!-- Mobile Start -->
+  
+<div class="container d-md-none d-lg-none" style="width:80%; background-color: white;">
+    <div class="row">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 3em;" >
+        <div class="container-fluid" style="padding-right: 5.7%;">
+          <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/assets/images/logo.svg" alt="Bootstrap" width="60" height="35">
+              </a>
+            </div>
+          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">New</a>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-size: 15px; margin-left: 1em;">Categories</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <!-- Hero -->
+    <div class="row">
+        <div class="card" style="border-radius: 0;">
+          <img src="/assets/images/image-web-3-mobile.jpg" class="card-img-top" alt="Hero Image" style="border-radius: 0px;">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <p class="card-title" style="font-weight: 800; padding: 5%; font-size: 30px; line-height: 1;">The Bright Future of Web 3.0?</p>
+              </div>
+                <div class="row">
+                  <p class="card-text" style="font-size: 13px; margin-left: 5%;">We dive into the next evolution of the web that claims to put the power of the
+                    platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                </div>
+                <div class="row" style="display: flex; justify-content: center;">
+                  <button type="button" class="btn mt-4"
+                    style="background-color: hsl(5, 85%, 63%); color: white; border-radius: 0; width: 11em; height: 3em; margin-left: 3%;">Read
+                    More</button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        <div class="container"
+          style=" background-color: hsl(240, 100%, 5%); border: 2px solid hsl(240, 100%, 5%); padding:
+          1em;">
+          <h1 class="mt-2" style="color: hsl(35, 77%, 62%);">New</h1>
+
+          <h5 class="mt-4 mb-2">Hydrogen VS Electric Cars</h5>
+          <p style="font-size: 15px;" class="mb-4">Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+          <hr>
+
+          <h5 class="mt-4 mb-2">The Downsides of AI Artistry</h5>
+          <p style="font-size: 15px;" class="mb-4">What are the possible adverse effects of on-demand AI image generation?</p>
+
+          <hr>
+
+          <h5 class="mt-4 mb-2">Is VC Funding Drying Up?</h5>
+          <p style="font-size: 15px;" class="mb-4">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+
+    <div class="container">
+    <div class="row mt-2">
+        <div class="card mb-3" style="max-width: 21em; border: none;">
+          <div class="row g-0">
+            <div class="col-md-4" style="display: flex; justify-content: center;">
+              <img src="/assets/images/image-retro-pcs.jpg" class="img-fluid" alt="Image of retro computer" >
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding: 0; padding-left: 1em; text-align: center;">
+                <h3 style="color: lightgrey;">01</h3>
+                <h6 class="card-title" style="font-weight: 800;">Reviving old retro PCs</h6>
+                <p class="card-text" style="font-size: 15px;">What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card mb-3" style="max-width: 21em; border: none;">
+          <div class="row g-0">
+            <div class="col-md-4" style="display: flex; justify-content: center;">
+              <img src="/assets/images/image-top-laptops.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding: 0; padding-left: 1em; text-align: center;">
+                <h3 style="color: lightgrey;">02</h3>
+                <h6 class="card-title" style="font-weight: 800;">Top Ten Laptop's of 2022</h6>
+                <p class="card-text" style="font-size: 15px;">Our best picks for various needs and budgets.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card mb-3" style="max-width: 21em; border: none;">
+          <div class="row g-0">
+            <div class="col-md-4" style="display: flex; justify-content: center;">
+              <img src="/assets/images/image-gaming-growth.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding: 0; padding-left: 1em; text-align: center;">
+                <h3 style="color: lightgrey;">03</h3>
+                <h6 class="card-title" style="font-weight: 800;">The Grow of Gaming</h6>
+                <p class="card-text" style="font-size: 15px;">How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Mobile End -->
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by Mark Ortega
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    </div>
+  
+</body>
+
+</html>
